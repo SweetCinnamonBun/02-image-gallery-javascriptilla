@@ -3,18 +3,92 @@ html {
 }
 
 img {
-  width: 300px;
-  height: 300px;
+  width: 82%;
+  height: 100%;
+  border: 1.5rem solid white;
+  border-radius: 1rem;
+}
+
+.container {
+  background-color: #5b9a8b;
+  height: 100vh;
+}
+
+h1 {
+  color: #fefcf3;
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 2.4rem;
 }
 
 ul {
-  padding: 2rem;
-  font-size: 1.2rem;
+  padding: 1.4rem;
+  font-size: 1.4rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 
 ul li {
+  padding: 1.2rem;
+  border: 2px solid #5b9a8b;
+  background-color: orange;
+  border-radius: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fefcf3;
+  font-weight: 500;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-block-start: 2rem;
+  height: 300px;
+}
+
+p {
+  text-align: center;
+  font-size: 2rem;
   padding: 1rem;
-  list-style: circle;
+  padding-block: 2rem;
+  font-style: italic;
+  color: white;
+}
+
+@media only screen and (min-width: 730px) {
+  img {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  img {
+    width: 66%;
+  }
+
+  .img-container {
+    height: 350px;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .wrapper {
+    width: 82%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .wrapper {
+    width: 72%;
+    margin: auto;
+  }
+
+  img {
+    width: 55%;
+  }
 }
